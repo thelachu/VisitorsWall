@@ -33,7 +33,7 @@ function Footer() {
 
               <li className="list-inline-item">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/thelachu/VisitorsWall/new/Main?filename=README.md"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-light text-decoration-none small">

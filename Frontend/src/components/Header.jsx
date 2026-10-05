@@ -73,7 +73,7 @@ function Header() {
               <li className="nav-item">
                 <a
                   className="btn btn-outline-dark btn-sm ms-lg-2 px-3"
-                  href="https://github.com/"
+                  href="https://github.com/thelachu/VisitorsWall/new/Main?filename=README.md"
                   target="_blank"
                   rel="noopener noreferrer">
                   Documentation
