@@ -1,0 +1,415 @@
+/* ==============================
+   PAGE
+================================ */
+
+.visitor-page {
+  min-height: 100vh;
+
+  background: #f8f9fa;
+
+  padding-bottom: 60px;
+}
+
+/* ==============================
+   HEADER
+================================ */
+
+.visitor-header {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 35px 0;
+}
+
+.visitor-title {
+  margin: 0;
+
+  font-size: 40px;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+.add-btn {
+  position: absolute;
+
+  right: 0;
+
+  padding: 10px 20px;
+
+  font-weight: 600;
+
+  border-radius: 8px;
+}
+
+/* ==============================
+   WALL
+================================ */
+
+.visitor-wall {
+  position: relative;
+
+  max-width: 1450px;
+
+  min-height: 650px;
+
+  margin: 10px auto;
+
+  padding: 55px;
+
+  background: #b87942;
+
+  border: 14px solid #98602f;
+
+  border-radius: 12px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Cork texture */
+
+.visitor-wall::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  opacity: 0.12;
+
+  pointer-events: none;
+
+  background-image: radial-gradient(#4d2a15 1px, transparent 1px);
+
+  background-size: 7px 7px;
+}
+
+/* ==============================
+   WALL GRID
+================================ */
+
+.wall-inner {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+
+  gap: 55px 40px;
+}
+
+/* ==============================
+   STICKER
+================================ */
+
+.visitor-sticker {
+  position: relative;
+
+  min-height: 350px;
+
+  padding: 20px;
+
+  border-radius: 3px;
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* ==============================
+   STICKER COLORS
+================================ */
+
+.sticker-0 {
+  background: #fff3a6;
+
+  transform: rotate(-2deg);
+}
+
+.sticker-1 {
+  background: #ffd9df;
+
+  transform: rotate(1.5deg);
+}
+
+.sticker-2 {
+  background: #d8f3ff;
+
+  transform: rotate(-1deg);
+}
+
+.sticker-3 {
+  background: #dff5d8;
+
+  transform: rotate(2deg);
+}
+
+.sticker-4 {
+  background: #e8dcff;
+
+  transform: rotate(-2deg);
+}
+
+.sticker-5 {
+  background: #ffe2c2;
+
+  transform: rotate(1deg);
+}
+
+/* ==============================
+   HOVER
+================================ */
+
+.visitor-sticker:hover {
+  transform: translateY(-8px) rotate(0deg) scale(1.02);
+
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.3);
+
+  z-index: 10;
+}
+
+/* ==============================
+   PIN
+================================ */
+
+.pin {
+  position: absolute;
+
+  top: -12px;
+
+  left: 50%;
+
+  width: 22px;
+
+  height: 22px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: #dc3545;
+
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
+
+  z-index: 5;
+}
+
+.pin::after {
+  content: "";
+
+  position: absolute;
+
+  top: 4px;
+
+  left: 4px;
+
+  width: 7px;
+
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Different pin colors */
+
+.sticker-1 .pin {
+  background: #0d6efd;
+}
+
+.sticker-2 .pin {
+  background: #198754;
+}
+
+.sticker-3 .pin {
+  background: #ffc107;
+}
+
+.sticker-4 .pin {
+  background: #6f42c1;
+}
+
+.sticker-5 .pin {
+  background: #fd7e14;
+}
+
+/* ==============================
+   IMAGE
+================================ */
+
+.visitor-image-wrapper {
+  width: 100%;
+
+  height: 170px;
+
+  margin-bottom: 18px;
+
+  overflow: hidden;
+
+  background: #eee;
+
+  border: 5px solid white;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.visitor-image {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* ==============================
+   NAME
+================================ */
+
+.visitor-name {
+  margin-bottom: 8px;
+
+  font-size: 23px;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+/* ==============================
+   DESCRIPTION
+================================ */
+
+.visitor-description {
+  min-height: 45px;
+
+  margin-bottom: 18px;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  color: #555;
+}
+
+/* ==============================
+   FOOTER
+================================ */
+
+.visitor-footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+/* ==============================
+   USERNAME
+================================ */
+
+.username {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #444;
+}
+
+/* ==============================
+   EMPTY WALL
+================================ */
+
+.empty-wall {
+  min-height: 500px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  color: white;
+
+  text-align: center;
+}
+
+.empty-wall h3 {
+  font-size: 30px;
+
+  margin-bottom: 10px;
+}
+
+.empty-wall p {
+  margin-bottom: 20px;
+}
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1200px) {
+  .wall-inner {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .wall-inner {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  .visitor-wall {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .visitor-header {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .visitor-title {
+    font-size: 30px;
+  }
+
+  .add-btn {
+    position: static;
+  }
+
+  .visitor-wall {
+    padding: 30px 20px;
+
+    border-width: 8px;
+  }
+
+  .wall-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .visitor-sticker {
+    width: 100%;
+
+    max-width: 350px;
+
+    margin: auto;
+  }
+}
