@@ -106,11 +106,11 @@ function ListVisitor({ showToast }) {
                         className="instagram-username link-secondary text-decoration-none">
                         @{visitor.username}
                       </a>
-                      <button
+                      {/*<button
                         className="btn btn-sm btn-outline-primary"
                         onClick={() => updateVisitor(visitor.id)}>
                         Update
-                      </button>
+                      </button>*/}
                     </div>
                   </div>
                 </div>
