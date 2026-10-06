@@ -61,7 +61,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/thelachu"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light text-decoration-none">
