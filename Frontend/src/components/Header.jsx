@@ -62,7 +62,7 @@ function Header() {
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  href="https://github.com/"
+                  href="https://github.com/thelachu"
                   target="_blank"
                   rel="noopener noreferrer">
                   GitHub
